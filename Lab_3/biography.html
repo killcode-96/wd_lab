@@ -4,28 +4,75 @@
     <meta charset="utf-8">
     <title>Biography</title>
     <style>
+        .button {
+            background-color: blue;
+            border-radius: 5px;
+            border: 2px solid purple;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.2s;
+            width: 150px;
+        }
         .button:hover {
-            color:magenta;
+            background-color: magenta;
+            color: black;
+            padding: 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
         }
         .button:active {
-            color:yellow;
+            background-color: yellow;
+            color: brown;
+            padding: 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+        article p {
+            padding: 10px;
+        }
+        article p.bi {
+            background: darkblue;
+            color: orange;
+        }
+        article p.ch {
+            background: orange;
+            color: darkblue;
+        }
+        article p.sy {
+            background: darkslategrey;
+            color: chartreuse;
+        }
+        article p.os {
+            background: chartreuse;
+            color: firebrick;
+        }
+        article p.un {
+            background: indigo;
+            color: olive;
         }
     </style>
 </head>
 <body>
-    <h1 id="hd1">Автобіографія Коцко Андрій Романович</h1>
+    <h1 id="hd1">Автобіографія Коцка Андрія Романовича</h1>
     <a href="index.html">Назад на головну</a>
     <h3 id="hd2">Зміст</h3>
 
-    <a class="button" href="#a1">Базова інформація</a>
-    <a class="button" href="#a2">Дитинство</a>
-    <a class="button" href="#a3">Шкільні роки</a>
-    <a class="button" href="#a4">Поза школою</a>
-    <a class="button" href="#a5">Університет</a>
+    <p><a class="button" href="#a1">Базова інформація</a></p>
+    <p><a class="button" href="#a2">Дитинство</a></p>
+    <p><a class="button" href="#a3">Шкільні роки</a></p>
+    <p><a class="button" href="#a4">Поза школою</a></p>
+    <p><a class="button" href="#a5">Університет</a></p>
 
     <article>
             <h2 id="a1">Базова інформація</h2>
-        <p>Мені 17 років, я студент ПНУ, навчаюсь на першому курсі Комп'ютерних наук.
+        <p class="bi">Мені 17 років, я студент ПНУ, навчаюсь на першому курсі Комп'ютерних наук.
             Люблю займатись спортом та за здоровий спосіб життя.
             Своє навчання у сфері IT почав з вивчення принципів роботи комп'ютера та комплектуючих, тому зараз можу вільно розповісти про це.
             Наступним моїм кроком стали мови програмування, інформацію з яких я дізнавався з інтернету та книжок.
@@ -36,7 +83,7 @@
     </article>
     <article>
         <h2 id="a2">Дитинство</h2>
-        <p>Своє дитинство я провів в селищі Східниця, туди я переїхав у 2 роки.
+        <p class="ch">Своє дитинство я провів в селищі Східниця, туди я переїхав у 2 роки.
             Я знайшов там друзів з якими й проводив свій час гуляючи та розвиваючись.
             Деяку частину дитинства я витратив на ознайомлення  з "всесвітом" комп'ютерних ігор, в той час я не замислювався про те як саме це працює.
             "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment,
@@ -46,7 +93,7 @@
     </article>
     <article>
             <h2 id="a3">Шкільні роки</h2>
-        <p>У 2011 році я пішов в 1 клас Східницького ЗЗСО І-ІІІ рівнів, та чекав свого першого уроку.
+        <p class="sy">У 2011 році я пішов в 1 клас Східницького ЗЗСО І-ІІІ рівнів, та чекав свого першого уроку.
             Найбільше в той час мені подобалось спілкуватись зі своїми однокласниками, це рятувало від важкості процесу навчання.
             Оцінки в мене були середні, але я запам'ятовував з уроків те що мені дійсно б пригодилось в житті.
             Паралельно з навчанням в школі, я все більше і більше почав цікавитись комп'ютером, та читав про це в інтернеті, тому що на уроках інформатики нам не могли розповісти все те що мені було потрібно знати.
@@ -55,7 +102,7 @@
     </article>
     <article>
         <h2 id="a4">Поза школою</h2>
-        <p>Наприкінці школи я дедалі більше цікавився своєю майбутньою професією, та почав вивчати мови програмування.
+        <p class="os">Наприкінці школи я дедалі більше цікавився своєю майбутньою професією, та почав вивчати мови програмування.
             І в ці моменти я розумів, що хочу навчатись в галузі IT.
             Цей рік я вивчав Python та SQL, я досяг важливих для себе цілей в навчанні та вже зараз готовий практикуватись в роботі.
             Також багато свого часу я проводив гуляючи з друзями, з яких більша частина вступили в університети на IT, тому мені є про що з ними поговорити на цю тему.</p>
@@ -63,7 +110,7 @@
     </article>
     <article>
         <h2 id="a5">Університет</h2>
-        <p>У 2022 році я закінчив школу, та обирав куди мені піти дальше навчатись, я читав про багато університетів,
+        <p class="un">У 2022 році я закінчив школу, та обирав куди мені піти дальше навчатись, я читав про багато університетів,
             але мій вибір зупинився на Прикарпатському національному університеті імені Василя Стефаника.
             Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
             Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat</p>
