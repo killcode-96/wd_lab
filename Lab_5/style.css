@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 85%;
+    margin: 0 auto;
+}
+
+h1{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.captions{
+    display: flex;
+    justify-content: space-between;
+}
+
+.caption{
+    border: 2px solid black;
+    width: 30%;
+    padding-top: 0;
+}
+
+.caption h2{
+    font-size: 20px;
+    text-align: right;
+    background-color: orange;
+    width: 100px;
+    margin-left: auto;
+}
+
+.caption p{
+    margin: 5px;
+}
+
+
+
+@media (max-width: 768px){
+    .captions{
+        display: block;
+    }
+    .caption{
+        margin: 0 auto;
+        margin-top: 10px;
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px ) and (max-width: 992px){
+    .captions{
+        display: inline;
+        background-color: blue;
+    }
+
+    .caption{
+        width: 100%;
+    }
+
+    .cap_1, .cap_2{
+        width: 20%;
+    }
+}
