@@ -1,65 +1,81 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-.container{
+.container {
     width: 85%;
     margin: 0 auto;
 }
 
-h1{
+h1 {
     text-align: center;
     margin: 20px 0;
 }
 
-.captions{
-    display: flex;
-    justify-content: space-between;
-}
-
-.caption{
+.caption {
     border: 2px solid black;
-    width: 30%;
-    padding-top: 0;
+    background-color: beige;
 }
 
-.caption h2{
-    font-size: 20px;
-    text-align: right;
-    background-color: orange;
+.caption h2 {
+    font-size: 16px;
+    text-align: center;
+    background-color: yellowgreen;
     width: 100px;
-    margin-left: auto;
+    margin: 0 0 0 auto;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
 }
 
-.caption p{
+.cap_2 h2 {
+    background-color: rosybrown;
+}
+
+.cap_3 h2 {
+    background-color: cornflowerblue;
+}
+
+.caption p {
     margin: 5px;
 }
 
-
-
-@media (max-width: 768px){
-    .captions{
+@media (max-width: 768px) {
+    .captions {
         display: block;
     }
-    .caption{
+
+    .caption {
         margin: 0 auto;
         margin-top: 10px;
         width: 100%;
     }
 }
 
-@media (min-width: 768px ) and (max-width: 992px){
-    .captions{
-        display: inline;
-        background-color: blue;
+@media (min-width: 768px ) and (max-width: 992px) {
+
+    .captions {
+        display: grid;
+        column-gap: 3vw;
+        grid-template-columns: 41vw 41vw;
     }
 
-    .caption{
-        width: 100%;
+    .cap_3 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        width: 85vw;
+        margin-top: 3vw;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .captions {
+        display: flex;
+        justify-content: space-between;
     }
 
-    .cap_1, .cap_2{
-        width: 20%;
+    .caption {
+        width: 30%;
     }
 }
