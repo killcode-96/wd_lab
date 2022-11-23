@@ -1,0 +1,75 @@
+.button {
+   background-color: blue;
+   border-radius: 5px;
+   border: 2px solid purple;
+   color: white;
+   padding: 15px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   transition: all 0.2s;
+   width: 150px;
+}
+.button:hover {
+   background-color: magenta;
+   color: black;
+   padding: 15px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+}
+.button:active {
+   background-color: yellow;
+   color: brown;
+   padding: 15px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+}
+article p {
+   padding: 10px;
+}
+article p.bi {
+   background: darkblue;
+   color: orange;
+}
+article p.ch {
+   background: orange;
+   color: darkblue;
+}
+article p.sy {
+   background: darkslategrey;
+   color: chartreuse;
+}
+article p.os {
+   background: chartreuse;
+   color: firebrick;
+}
+article p.un {
+   background: indigo;
+   color: olive;
+}
+#hd1{
+   text-align: center;
+   font-size: 22px;
+}
+body a{
+   font-style: italic;
+}
+#hd2{
+   text-align: center;
+}
+article{
+   font-size: 1.2em;
+}
+article h2{
+   font-size: 1.2em;
+}
+article a{
+   font-weight: bold;
+}
+#up{
+   text-transform: uppercase;
+}

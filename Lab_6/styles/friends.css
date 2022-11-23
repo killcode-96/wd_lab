@@ -1,0 +1,29 @@
+table, th, td {
+   border: 1px solid black;
+}
+tbody tr:nth-child(odd) {
+   background: gray;
+   color: white;
+}
+.tit{
+   background: green;
+   color: aqua;
+   text-align: center;
+   font-weight: bold;
+}
+th, td {
+   padding: 10px;
+}
+.num{
+   text-align: right;
+}
+h1{
+   text-align: center;
+   font-size: 22px;
+}
+h2{
+   text-align: center;
+}
+body a{
+   font-style: italic;
+}
