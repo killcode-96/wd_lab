@@ -18,3 +18,14 @@ h2{
 body a{
    font-style: italic;
 }
+
+@media screen and (min-width: 992px) {
+
+   .lists{
+      display: flex;
+   }
+   .list{
+      width: 50%;
+   }
+
+}

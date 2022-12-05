@@ -1,38 +1,48 @@
 #biography {
-   color:brown;
+   color: brown;
 }
-#biography:visited{
+
+#biography:visited {
    color: aqua;
 }
+
 #novadays {
-   color:rgb(42, 165, 73);
+   color: rgb(42, 165, 73);
 }
-#novadays:visited{
+
+#novadays:visited {
    color: rgb(71, 39, 248);
 }
+
 #friends {
-   color:rgb(235, 238, 51);
+   color: rgb(235, 238, 51);
 }
-#friends:visited{
+
+#friends:visited {
    color: rgb(248, 39, 137);
 }
+
 #gallery {
-   color:rgb(0, 194, 253);
+   color: rgb(0, 194, 253);
 }
-#gallery:visited{
+
+#gallery:visited {
    color: rgb(19, 2, 17);
 }
-h1{
+
+h1 {
    text-align: center;
    font-size: 24px;
 }
-#text{
+
+#text {
    font-size: 120%;
 }
 
 
-@media (min-width: 993px) {
-   .menu{
+
+@media screen and (min-width: 993px) {
+   .menu {
       display: flex;
       width: 800px;
       justify-content: space-between;
@@ -40,19 +50,24 @@ h1{
    }
 }
 
-@media (max-width: 992px) {
-   .menu{
+@media screen and (max-width: 992px) and (min-width: 769px) {
+   .menu {
       display: flex;
       width: 500px;
       justify-content: space-between;
       margin: 0 auto;
       flex-wrap: wrap;
    }
-   .menu .menu-item{
-      flex: 0, 50%;
+
+   .menu .menu-item {
+      flex: 0 50%;
+      margin-bottom: 10px;
    }
 }
 
-@media (max-width: 768px) { 
-   
+@media (max-width: 768px) {
+.menu {
+      display: flex;
+      flex-direction: column;
+   }
 }

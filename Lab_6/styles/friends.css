@@ -27,3 +27,30 @@ h2{
 body a{
    font-style: italic;
 }
+
+@media screen and (min-width: 992px) {
+   .tit{
+      font-size: 130%;
+   }
+   tbody{
+      font-size: 120%;
+   }
+   
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+   .tit{
+      font-size: 120%;
+   }
+   tbody{
+      font-size: 110%;
+   }
+   
+}
+
+@media screen and (max-width: 768px) {
+   .tit{
+      font-size: 110%;
+   }
+   
+}

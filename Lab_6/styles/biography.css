@@ -28,26 +28,31 @@
    display: inline-block;
    font-size: 16px;
 }
+
+article{
+   border: 1px solid black;
+}
+
 article p {
    padding: 10px;
 }
-article p.bi {
+article.bi {
    background: darkblue;
    color: orange;
 }
-article p.ch {
+article.ch {
    background: orange;
    color: darkblue;
 }
-article p.sy {
+article.sy {
    background: darkslategrey;
    color: chartreuse;
 }
-article p.os {
+article.os {
    background: chartreuse;
    color: firebrick;
 }
-article p.un {
+article.un {
    background: indigo;
    color: olive;
 }
@@ -72,4 +77,45 @@ article a{
 }
 #up{
    text-transform: uppercase;
+}
+
+
+@media screen and (min-width: 993px) {
+   .articles{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+   }
+   .articles > article{
+      width: 30%;
+   }
+
+   .articles article:nth-child(4), .articles article:nth-child(5){
+      width: 47%;
+      margin-top: 50px;
+   }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+
+   .articles{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+   }
+
+   .articles > article{
+      width: 47%;
+      margin-top: 50px;
+   }
+
+}
+
+@media screen and (max-width: 767px) {
+
+   .articles{
+      display: flex;
+      flex-direction: column;
+   }
+
 }

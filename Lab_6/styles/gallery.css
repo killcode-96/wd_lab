@@ -1,3 +1,14 @@
+html{
+   margin: 0;
+   padding: 0;
+}
+body{
+   width: 100vw;
+   height: 100vh;
+   padding: 0;
+   margin: 0;
+}
+
 h1{
    text-align: center;
    font-size: 20px;
@@ -22,4 +33,33 @@ h2{
 }
 .img{
    text-align: center;
+}
+
+.images{
+   display: flex;
+
+}
+img{
+   max-width: 100%;  
+   height: auto;  
+}
+
+@media screen and (max-width:992px) and (min-width: 768px) {
+   .image:nth-child(1), .image:nth-child(2){
+      width: 50vh;
+
+   }
+   .image:nth-child(3){
+      width: 100vh;
+   }
+   .images{
+      flex-wrap: wrap;
+      width: 100vw;
+   }
+}
+
+@media screen and (max-width:768px) {
+   .images{
+      display: block;
+   }
 }
