@@ -1,0 +1,35 @@
+#block1{
+    background: darkslateblue;
+    color: yellow;
+}
+#block2{
+    background: gold;
+    color: mediumvioletred;
+}
+#block3{
+    background: palegreen;
+    color: teal;
+}
+#block4{
+    background: olivedrab;
+    color: crimson;
+}
+#title1{
+    background-color: goldenrod;
+}
+#title2{
+    background-color: forestgreen;
+}
+#title3{
+    background-color: navajowhite;
+}
+#title4{
+    background-color: coral;
+}
+.title{
+    text-align: center;
+    border: 1px solid black;
+    width: 100px;
+    float: right;
+    color: darkslateblue;
+}
